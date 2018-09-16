@@ -11,9 +11,9 @@ keywords:
 home: https://mariadb.org
 icon: https://bitnami.com/assets/stacks/mariadb/img/mariadb-stack-220x234.png
 sources:
-- https://github.com/bitnami/bitnami-docker-mariadb
+- https://github.com/anaxexp/mariadb
 - https://github.com/prometheus/mysqld_exporter
 maintainers:
-- name: bitnami-bot
-  email: containers@bitnami.com
+- name: anaxexp-bot
+  email: containers@anaxexp.io
 engine: gotpl

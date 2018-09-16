@@ -9,8 +9,8 @@ keywords:
 home: http://memcached.org/
 icon: https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Memcached.svg/1024px-Memcached.svg.png
 sources:
-- https://github.com/docker-library/memcached
+- https://github.com/anaxexp/memcached
 maintainers:
-- name: Greg Taylor
-  email: gtaylor@gc-taylor.com
+- name: anaxexp-bot
+  email: containers@anaxexp.io
 engine: gotpl
