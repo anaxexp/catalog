@@ -1,14 +1,15 @@
 # AnaxExp Catalog
 
-A currated collection of AnaxExp 2.0 enhanced Helm charts. To see how catalogs are added and used in AnaxExp 2.0 take a look at the [docs page](https://rancher.com/docs/rancher/v2.x/en/concepts/catalogs/).
+A currated collection of AnaxExp 2.0 enhanced Helm charts. To see how catalogs are added and used in AnaxExp 2.0 take a look at the [docs page](https://docs.anaxexp.io/catalog/).
 
 ## AnaxExp Chart Structure
 
 A AnaxExp chart repository differs slightly in directory structure from upstream repos in that it includes an `app version` directory. Though AnaxExp can use native Helm repositories as well.
 
-A AnaxExp chart also has two additional files an `app-readme.md` file that provides a high level overview display in the AnaxExp 2.0 UI and a `questions.yml` file defining questions to prompt the user with. 
+A AnaxExp chart also has two additional files an `app-readme.md` file that provides a high level overview display in the AnaxExp 2.0 UI and a `questions.yml` file defining questions to prompt the user with.
 
 ```
+
 charts/wordpress/<app version>/
   app-readme.md            # AnaxExp Specific: Readme file for display in AnaxExp 2.0 UI
   charts/                  # Directory containing dependency charts
@@ -19,11 +20,13 @@ charts/wordpress/<app version>/
   templates/               # A directory of templates that, when combined with values.yml will generate K8s YAML
   values.yaml              # The default configuration values for this chart
 ```
+
 *See the upstream Helm chart [developer reference](https://docs.helm.sh/developing_charts/) for a complete walk through of developing charts.*
 
 To convert an upstream chart to take advantage of AnaxExp's enhanced UX, first create an `app-readme.md` file in the root of your chart.
 
 ```
+
 $ cat ./app-readme.md
 
 # Wordpress ROCKS!
@@ -32,6 +35,7 @@ $ cat ./app-readme.md
 Then add a `questions.yml` file to prompt the user for something.
 
 ```
+
 categories:
 - Blog
 - CMS
@@ -86,7 +90,7 @@ The above file also provides a list of categories that this chart fits into. Thi
 **subquestions**: `subquestions[]` cannot contain `subquestions` or `show_subquestions_if` keys, but all other keys in the above table are supported. 
 
 ## License
-Copyright (c) 2018 [Rancher Labs, Inc.](http://rancher.com)
+Copyright (c) 2018 [Anax Experience, LLC.](http://anaxexp.io)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -99,4 +103,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-    
