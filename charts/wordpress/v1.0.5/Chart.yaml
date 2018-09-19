@@ -13,7 +13,7 @@ keywords:
 - php
 home: http://www.wordpress.com/
 sources:
-- https://github.com/anaxexp/wordpress4docker
+- https://github.com/anaxexp/wordpress
 maintainers:
 - name: anaxexp-bot
   email: containers@anaxexp.io
