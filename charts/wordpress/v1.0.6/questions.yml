@@ -11,22 +11,22 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "bitnami/wordpress"
+    default: "anaxexp/wordpress"
     description: "WordPress image name"
     type: string
     label: WordPress Image Name
   - variable: image.tag
-    default: "4.9.4"
+    default: "4-7.0-4.5.0"
     description: "WordPress image tag"
     type: string
     label: Image Tag
   - variable: mariadb.image.repository
-    default: "bitnami/mariadb"
+    default: "anaxexp/mariadb"
     description: "MariaDB image name"
     type: string
     label: MariaDB Image Name
   - variable: mariadb.image.tag
-    default: "10.1.32"
+    default: "10.2-3.3.0"
     description: "MariaDB image tag"
     type: string
     label: MariaDB Image Tag
